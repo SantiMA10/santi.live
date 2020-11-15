@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "name": "twitch",
+  "version": "1.0.0",
+  "description": "A Cloudflare Worker for redirecting santi.live to my twitch page",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write '**/*.{js,css,json,md}'",
+    "dev": "wrangler dev"
+  },
+  "author": "Santiago Martín Agra <live@santiagomartin.dev>",
+  "license": "CC-BY-4.0",
+  "devDependencies": {
+    "prettier": "^1.18.2",
+    "wrangler": "^0.0.2"
+  }
+}

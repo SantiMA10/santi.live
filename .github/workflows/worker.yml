@@ -1,0 +1,21 @@
+name: Deploy to Cloudflare Worker
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
+      - uses: actions/checkout@v2
+      - name: get wrangler.toml
+        run: 'echo "$WRANGLER" > wrangler.toml'
+        env:
+          WRANGLER: ${{ secrets.WRANGLER }}
+      - name: Publish
+        uses: cloudflare/wrangler-action@1.3.0
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
