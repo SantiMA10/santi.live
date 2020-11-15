@@ -1,4 +1,4 @@
-# 🟣 Twitch
+# 🟣 santi.live ![Deploy to Cloudflare Worker](https://github.com/SantiMA10/santi.live/workflows/Deploy%20to%20Cloudflare%20Worker/badge.svg)
 
 A Cloudflare Worker to redirect https://santi.live to my twitch page
 
